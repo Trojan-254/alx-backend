@@ -1,0 +1,12 @@
+#!/usr/bin/node
+
+var kue = require('kue')
+  , queue = kue.createQueue();
+
+let job = queue.create('push_notification_code',
+   {
+     phoneNumber: string,
+     message: string,
+   }).save((err) => {
+     if(!err) console
+ });
