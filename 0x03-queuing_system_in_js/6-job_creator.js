@@ -5,8 +5,8 @@ let kue = require('kue')
 
 let job = queue.create('push_notification_code',
    {
-     phoneNumber: String,
-     message: String,
+     phoneNumber: '4153518780',
+     message: 'This is the code to verify your account',
    }).save((err) => {
      if(err) {
        console.log('Notification job failed');
